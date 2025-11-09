@@ -1,1 +1,7 @@
 node_modules
+<<<<<<< HEAD
+=======
+build
+.env
+.DS_Store
+>>>>>>> 56362a4 (Added backend folder with Node.js server)

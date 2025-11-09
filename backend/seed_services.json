@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Home Deep Cleaning",
+    "category": "Cleaning",
+    "description": "Full home deep cleaning including kitchen and bathrooms.",
+    "price": 1500,
+    "provider": "CleanPro Services",
+    "image": "https://via.placeholder.com/400x200?text=Cleaning"
+  },
+  {
+    "name": "Ceiling & Wall Painting",
+    "category": "Painting",
+    "description": "Interior painting using premium emulsion paint.",
+    "price": 3500,
+    "provider": "PaintMaster",
+    "image": "https://via.placeholder.com/400x200?text=Painting"
+  },
+  {
+    "name": "General Plumbing",
+    "category": "Plumbing",
+    "description": "Fix leaky pipes, taps, and unclog drains.",
+    "price": 800,
+    "provider": "FlowFix Plumbers",
+    "image": "https://via.placeholder.com/400x200?text=Plumbing"
+  }
+]
