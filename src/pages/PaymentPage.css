@@ -1,0 +1,84 @@
+.payment-page {
+  min-height: 90vh;
+}
+
+.summary-card {
+  overflow: hidden;
+  border: none;
+  border-radius: 16px;
+}
+
+.summary-image {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.summary-card .card-body h5 {
+  color: #0d47a1;
+  font-weight: 600;
+}
+
+.payment-box {
+  border-radius: 16px;
+  border: none;
+}
+
+.payment-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.pay-option {
+  flex: 1;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 0;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  background-color: #f8f9fa;
+}
+
+.pay-option.active {
+  border-color: #0d6efd;
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  font-weight: 600;
+  transform: scale(1.03);
+}
+
+.pay-option:hover {
+  background-color: #e9f3ff;
+}
+
+input,
+select {
+  border-radius: 10px !important;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+.btn-success {
+  background: linear-gradient(90deg, #2e7d32, #1b5e20);
+  border: none;
+  border-radius: 12px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 14px rgba(46, 125, 50, 0.3);
+}

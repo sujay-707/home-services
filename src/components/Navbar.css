@@ -1,0 +1,76 @@
+/* White–Blue Professional Navbar */
+.custom-navbar {
+  background-color: #0d6efd !important;
+  border-bottom: 2px solid #e3f2fd !important;
+  transition: all 0.3s ease-in-out;
+  padding: 0.6rem 1rem;
+  z-index: 1000;
+}
+
+/* Brand */
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #eaeaea !important;
+  letter-spacing: 0.3px;
+}
+.navbar-brand:hover {
+  color: #e2e4e7 !important;
+}
+
+/* Nav Links */
+.nav-link {
+  color: #d9dce1 !important;
+  font-weight: 500;
+  padding: 8px 16px !important;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  background-color: #e3f2fd;
+  color: #0d47a1 !important;
+  transform: translateY(-1px);
+}
+
+/* Logout Button */
+.logout-btn {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background-color: white;
+  border: 1.5px solid #0d6efd;
+  color: #0d6efd;
+  padding: 6px 14px;
+}
+.logout-btn:hover {
+  background-color: #0d6efd;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Mobile Toggle */
+.navbar-toggler-icon {
+  background-image: none;
+  width: 22px;
+  height: 2px;
+  background-color: #0d6efd;
+  position: relative;
+  border-radius: 2px;
+}
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 2px;
+  background-color: #0d6efd;
+  border-radius: 2px;
+}
+.navbar-toggler-icon::before {
+  top: -6px;
+}
+.navbar-toggler-icon::after {
+  top: 6px;
+}
