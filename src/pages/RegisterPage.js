@@ -1,10 +1,8 @@
 // src/pages/RegisterPage.js
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
 import api from "../api";
 import "./AuthPages.css";
-
 
 export default function RegisterPage() {
   const [form, setForm] = useState({ username: "", password: "", role: "customer" });
@@ -15,18 +13,19 @@ export default function RegisterPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (!form.username || !form.password) {
-    showToast("warn", "⚠️ Please fill all required fields", "register-warning");
+      alert("⚠️ Please fill all required fields");
       return;
     }
 
     setLoading(true);
     try {
       await api.post("/auth/register", form);
-      showToast("success", "🎉 Registration successful! Please log in.", "register-success");
-      setTimeout(() => navigate("/login"), 1500);
+      alert("🎉 Registration successful! Please log in.");
+      setTimeout(() => navigate("/login"), 1200);
     } catch (err) {
-showToast("error", err?.response?.data?.error || "Registration failed. Try again.", "register-error");
+      alert(err?.response?.data?.error || "Registration failed. Try again.");
     } finally {
       setLoading(false);
     }

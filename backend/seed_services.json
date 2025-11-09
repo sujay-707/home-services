@@ -1,26 +1,99 @@
 [
   {
+    "_id": {
+      "$oid": "691066287fb9e2a11c994682"
+    },
     "name": "Home Deep Cleaning",
     "category": "Cleaning",
-    "description": "Full home deep cleaning including kitchen and bathrooms.",
+    "description": "Full home deep cleaning including kitchen, hall, and bathrooms using eco-friendly products.",
     "price": 1500,
-    "provider": "CleanPro Services",
-    "image": "https://via.placeholder.com/400x200?text=Cleaning"
+    "provider": "CleanPro",
+    "image": "/images/Home.png"
   },
   {
+    "_id": {
+      "$oid": "691066287fb9e2a11c994683"
+    },
     "name": "Ceiling & Wall Painting",
     "category": "Painting",
-    "description": "Interior painting using premium emulsion paint.",
+    "description": "Interior and exterior painting using high-quality emulsion paints.",
     "price": 3500,
     "provider": "PaintMaster",
-    "image": "https://via.placeholder.com/400x200?text=Painting"
+    "image": "/images/paint.png"
   },
   {
+    "_id": {
+      "$oid": "691066287fb9e2a11c994684"
+    },
     "name": "General Plumbing",
     "category": "Plumbing",
-    "description": "Fix leaky pipes, taps, and unclog drains.",
+    "description": "Fix leaky pipes, taps, and unclog drains efficiently.",
     "price": 800,
     "provider": "FlowFix Plumbers",
-    "image": "https://via.placeholder.com/400x200?text=Plumbing"
+    "image": "/images/Plumb.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "691066287fb9e2a11c994685"
+    },
+    "name": "Electrical Appliance Repair",
+    "category": "Electrical",
+    "description": "Expert repair for fans, lights, switches, and household electrical issues.",
+    "price": 1200,
+    "provider": "VoltCare Services",
+    "image": "/images/electrical.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "691066287fb9e2a11c994686"
+    },
+    "name": "Air Conditioner Service",
+    "category": "Appliance",
+    "description": "AC cleaning, gas refilling, and cooling efficiency checks.",
+    "price": 1800,
+    "provider": "CoolTech Experts",
+    "image": "/images/AC.png"
+  },
+  {
+    "_id": {
+      "$oid": "691066287fb9e2a11c994687"
+    },
+    "name": "Carpet & Sofa Cleaning",
+    "category": "Cleaning",
+    "description": "Deep vacuuming and shampoo cleaning for carpets and sofas.",
+    "price": 1300,
+    "provider": "FreshNest Cleaners",
+    "image": "/images/Sofa.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "691066287fb9e2a11c994688"
+    },
+    "name": "Pest Control Treatment",
+    "category": "Pest Control",
+    "description": "Safe pest control service against termites, cockroaches, and mosquitoes.",
+    "price": 2000,
+    "provider": "EcoPest Shield",
+    "image": "/images/Pest.png"
+  },
+  {
+    "_id": {
+      "$oid": "691066287fb9e2a11c994689"
+    },
+    "name": "Carpentry & Furniture Repair",
+    "category": "Carpentry",
+    "description": "All types of woodwork, polish, and modular furniture repairs.",
+    "price": 2200,
+    "provider": "WoodFix Craftsmen",
+    "image": "/images/carpenter.png"
+  },
+  {
+    "_id": "691066287fb9e2a11c994690",
+    "name": "Lawn Maintenance",
+    "category": "Lawn",
+    "description": "Professional lawn mowing, trimming, and garden maintenance services.",
+    "price": 2200,
+    "provider": "GreenLeaf Gardeners",
+    "image": "/images/lawn.png"
   }
 ]

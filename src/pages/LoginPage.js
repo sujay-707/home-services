@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-import { toast } from "react-toastify";
 import api from "../api";
 import "./AuthPages.css";
 
@@ -16,8 +15,9 @@ export default function LoginPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (!form.username || !form.password) {
-      toast.warning("Please fill in all fields!");
+      alert("⚠️ Please fill in all fields!");
       return;
     }
 
@@ -27,12 +27,11 @@ export default function LoginPage() {
       const userObj = { _id: res.data._id, username: res.data.username, role: res.data.role };
       login(userObj);
 
-      toast.success(`Welcome ${res.data.username}!`);
+      alert(`✅ Welcome ${res.data.username}!`);
       if (res.data.role === "admin") navigate("/admin");
       else navigate("/");
     } catch (err) {
-      showToast("error", "❌ Invalid username, password, or role", "login-error");
-
+      alert("❌ Invalid username, password, or role");
     } finally {
       setLoading(false);
     }
